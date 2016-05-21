@@ -7,6 +7,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
     <groupId>gDawg</groupId>
     <artifactId>testApp</artifactId>
     <version>1.0</version>
+    <packaging>war</packaging>
     
     <dependencies>
         <dependency>
@@ -42,11 +43,13 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>testPackage.Moin</mainClass>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>${user.home}/.m2/repository</classpathPrefix>
                         </manifest>
                     </archive>
+                    <warSourceDirectory>${basedir}/WEB-INF/classes</warSourceDirectory>
+                    <webXml>${basedir}/WEB-INF/web.xml</webXml>
+                    <outputDirectory>/home/gman/ProgramFiles/ApacheSoftwareFoundation/Tomcat/apache-tomcat-9.0.0.M4/webapps</outputDirectory>
                 </configuration>
                 
             </plugin>
