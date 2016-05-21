@@ -7,10 +7,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 public class Svlet extends HttpServlet{
-    public Svlet (){
-        System.out.println("YEA BOY !!!!!");
-    }
-
+        
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException{
         response.getWriter().println("Hello, World!");
