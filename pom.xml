@@ -7,7 +7,6 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
     <groupId>gDawg</groupId>
     <artifactId>testApp</artifactId>
     <version>1.0</version>
-    <type>war</type>
     
     <dependencies>
         <dependency>
